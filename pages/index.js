@@ -3,6 +3,8 @@ import styles from '../styles/Home.module.css'
 import {useEffect} from "react";
 import {useStateValue} from "../src/Components/StateProvider";
 
+console.log(process.env.NEXT_PUBLIC_JAM)
+
 export default function Home() {
   useEffect(()=>{
     console.log(process.env.JAM)
@@ -27,8 +29,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          {process.env.JAM}
-          {state.some} <a href="https://nextjs.org">Next.js!</a>
+          {process.env.NEXT_PUBLIC_JAM}
+           <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className={styles.description}>

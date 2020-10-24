@@ -6,8 +6,8 @@ dotenvLoad()
 
 const withEnv = nextEnv()
 
-module.exports = {
-    env: {
-        customKey: 'my-value',
-    },
-}
+module.exports = withEnv({
+    env:{
+        NEXT_PUBLIC_JAM: 'RAM',
+    }
+})
